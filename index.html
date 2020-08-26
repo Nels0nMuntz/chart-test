@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Chart</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="chart">
+        <div class="chart__title">Bar Chart</div>        
+        <div class="chart__container">
+            <div class="chart__inner"> 
+                <div class="y-level-points"></div>          
+                <div class="y-axis"></div>   
+                <div class="x-axis"></div>  
+                <div class="columns"></div>       
+            </div>             
+        </div>
+
+        
+
+        <div class="chart__control control">
+            <div class="control__size">
+                <div class="control__item">
+                    <div class="control__title">Width</div>
+                    <div class="control__input-block width-input-block">
+                        <div class="control__btn"><div class="control__arrow arrow-less" data-use="width"></div></div>  
+                        <input class="control__input" type="text" name="width" placeholder="Intager" autocomplete="off">                  
+                        <div class="control__btn"><div class="control__arrow arrow-more" data-use="width"></div></div>                    
+                    </div>
+                </div>   
+                <div class="control__item">
+                    <div class="control__title">Height</div>
+                    <div class="control__input-block height-input-block">
+                        <div class="control__btn"><div class="control__arrow arrow-less" data-use="height"></div></div>  
+                        <input class="control__input" type="text" name="height" placeholder="Intager" autocomplete="off">                  
+                        <div class="control__btn"><div class="control__arrow arrow-more" data-use="height"></div></div>                    
+                    </div>
+                </div>             
+            </div>
+        </div>
+
+    </div>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>

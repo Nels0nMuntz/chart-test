@@ -1,0 +1,153 @@
+body{
+    background-color: aliceblue;
+}
+.chart{
+    text-align: center;
+}
+.chart__container{
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+.chart__inner{
+    flex: 1 1 400px;
+    height: 100%;
+    margin: 0 30px;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    position: relative;
+}
+
+.y-axis{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.y-level{
+    flex: 1 1 0;
+    width: 100%;
+    position: relative;
+}
+.y-level::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(216, 216, 216);
+}
+
+.x-axis{
+    width: 100%;
+    display: flex;
+    margin: 5px 0 0 0;
+}
+.x-level{
+    flex: 1 1 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.columns{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.column-item{
+    flex: 1 1 0;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.column{
+    width: 70%;
+    margin: 0 auto;
+    opacity: 0.7;
+    box-sizing: border-box;
+}
+.column.low{
+    background-color: rgb(128, 255, 0);
+    border: 1px solid rgb(69, 133, 5);
+    border-bottom: none;
+}
+.column.medium{
+    background-color: rgb(255, 238, 0);
+    border: 1px solid rgb(214, 146, 0);
+    border-bottom: none;
+}
+.column.high{
+    background-color: rgb(255, 0, 0);
+    border: 1px solid rgb(153, 0, 0);
+    border-bottom: none;
+}
+
+.y-level-points{
+    position: absolute;
+    left: -25px;
+    bottom: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.y-point{
+    flex: 1 1 0;
+    font-size: 14px;
+    transform: translateY(-7px);
+}
+
+.chart__control{
+    margin: 80px 0 0 80px;
+}
+.control__item{
+    width: 300px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.control__input-block{
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+}
+.control__input{
+    width: 100px;
+    margin: 0 10px;
+    text-align: center;
+    outline: none;
+}
+.control__input:focus::placeholder{
+    color: transparent;
+}
+
+.control__btn{
+    width: 18px;
+    height: 20px;
+    padding: 5px 0 0 7px;
+    background-color: #fff;
+    border-radius: 2px;
+    border: 1px solid darkgray;
+}
+.control__arrow{
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+}
+.arrow-less{
+    border-right-color: steelblue;
+    border-left: none;
+}
+.arrow-more{
+    border-left-color: steelblue;
+    border-right: none;
+    margin-left: 2px;
+}
